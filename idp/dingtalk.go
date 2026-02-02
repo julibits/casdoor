@@ -167,7 +167,7 @@ func (idp *DingTalkIdProvider) GetUserInfo(token *oauth2.Token) (*UserInfo, erro
 	}
 
 	userInfo := UserInfo{
-		Id:          dtUserInfo.OpenId,
+		Id:          dtUserInfo.UnionId,
 		Username:    dtUserInfo.Nick,
 		DisplayName: dtUserInfo.Nick,
 		UnionId:     dtUserInfo.UnionId,
